@@ -1,0 +1,2 @@
+# Paste this to terminal before running protocol scripts
+export PYTHONPATH="${PYTHONPATH}:/home/karolina/syssec2"
