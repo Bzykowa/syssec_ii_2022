@@ -5,7 +5,7 @@ from klib import jstore
 
 sys.path.insert(1, "/home/karolina/mcl-python")
 group_init = b"bls_ss"
-# HOSTNAME = "localhost"
+
 HOSTNAME = "localhost"
 PORT = 15000
 
