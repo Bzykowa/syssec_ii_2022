@@ -5,7 +5,7 @@ from klib import jload
 
 sys.path.insert(1, "/home/karolina/mcl-python")
 group_init = b"schnorr_ss"
-# HOSTNAME = "localhost"
+
 HOSTNAME = "localhost"
 PORT = 15000
 
@@ -17,7 +17,7 @@ class Verifier(Responder):
         self.g = G2.hashAndMapTo(group_init)
 
     def verify(self, A, X, m: str, s):
-        """Verify the signature using pairing function."""
+        """Verify the signature."""
         h = Fr.setHashOf((str(X) + m).encode())
         if self.g * s == X + (A*h):
             print("Accepted")
